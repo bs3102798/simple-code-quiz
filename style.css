@@ -3,7 +3,7 @@ body{
 }
 
 .start_btn,
-.Info_box,
+.info_box,
 .quiz_box,
 .resultbox
 .next11{
@@ -27,14 +27,19 @@ body{
     cursor: pointer;
 
 }
-.info_box.activeinfo{
+
+
+.info_box .activeInfo{
     z-index: 5;
     opacity: 1;
     pointer-events: auto;
     transform: translate(-50%, -50%) scale(1);
+    border-radius: 5px;
+    width: 540px;
+    background: white;
+    
 }
-
-.Info_box{
+.info_box{
     border-radius: 5px;
     width: 540px;
     background: white;
@@ -44,7 +49,7 @@ body{
 
 }
 
-.Info_box  .info_title{
+.info_box  .info_title{
     height: 60px;
     width: 85%;
     border-bottom: 1px solid lightgray;
@@ -54,21 +59,21 @@ body{
     font-size: 20px;
     font-weight: 500;
 }
-.Info_box .info_list{
+.info_box .info_list{
     padding: 15px 33px;
 }
 
-.Info_box .info .info_title{
+.info_box .info .info_title{
     margin: 5px;
     font-size: 17px;
 }
 
-.Info_box .info .info_title span{
+.info_box .info .info_title span{
     font-weight: 600;
     color: #000;
 }
 
-.Info_box .buttons{ 
+.info_box .buttons{ 
     height: auto;
     display: flex;
     align-items: center;
@@ -80,7 +85,7 @@ body{
 
 }
 
-.Info_box .buttons button{
+.info_box .buttons button{
     margin: 0 5px;
     height: 40px;
     width: 100px;
