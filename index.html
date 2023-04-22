@@ -1,127 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codeing Quiz</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="start_btn" ><button>start quiz</button></div>
     
-    <div class=" info_box">
-        <div class="info_title">
-            <span>som rules</span>
-        </div>
-        <div class="info_list">
-            <div class="info">hi totototo <span>totot</span>lsjdfaksd</div>
-            <div class="info">djafldsfkaj;sd</div>
-            <div class="info">aifjilad;siof</div>
-            <div class="info">adfoua</div>
-            <div class="info">afsdod </div>
-            
-        </div>
-        <div class="buttons">
-            <button class="quit">djfakd;l</button>
-            <button class="restart">aiodfsa</button>
-        </div>
+  </head>
+  
+<body>
+  
+
+    <header>
+      <p>View Highscores</p>
+    <p id="time">Time</p>
+  </header>
+  <main>
+    <div id="main" class="page">
+      <h2 id="title">Coding Quiz</h2>
+      <p></p>
+      <button id="start_btn" class="button">Start</button>
     </div>
-
-    <div class="quiz_box">
-        <header>
-            <div class="title">alk;sdjlf;jaksd</div>
-            <div class="timer">
-                <div class="timertext">afsdf</div>
-                <div class="timersec">asdf</div>
-            </div>
-        </header>
-        <section>
-            <div class="quetext">
-                <span>kjskdljaf;lkds;kljafd</span>
-            </div>
-            <div class="optionlist">
-                <div class="option">
-                    <span>;asdjkfalsdkf</span>
-                    <div class="icon"></div>
-                </div>
-                <div class="option">
-                    <span>;asdjkfalsdkf</span>
-                    <div class="icon"></div>
-                </div>
-                <div class="option">
-                    <span>;asdjkfalsdkf</span>
-                    
-                </div>
-                <div class="option">
-                    <span>;asdjkfalsdkf</span>
-                    
-                </div>
-            </div>
-
-        </section>
-
-        <footer>
-            <div class="totalque">
-                <span><p>2</p><p>of</p><p>5</p><p>questions</p></span>
-            </div>
-            <button class="next">nest q</button>
-        </footer>
-        
-    </div>
-
-    <div class="next11">
-        <header>
-            <div class="title11">View high scores</div>
-            <div class="timer11">
-                <div class="timeLeft">tiem left</div>
-                <div class="timesec11">seconds left</div>
-
-            </div>
-        </header>
-        <section>
-            <div class="quetext11">
-                <span>alds;kfj;ksldf</span>
-            </div>
-            <div class="optionlist11">
-                <div class="option11">
-                    <span>adjlkfsafdkl;</span>
-                </div>
-                <div class="option11">
-                    <span>adjlkfsafdkl;</span>
-                </div>
-                <div class="option11">
-                    <span>adjlkfsafdkl;</span>
-                </div>
-                <div class="option11">
-                    <span>adjlkfsafdkl;</span>
-                </div>
-            </div>
-        </section>
-        <footer>
-            <div class="total11">
-                <span><p>3</p><p>of</p><p>5</p><p>questions</p></span>
-            </div>
-            <button class="next1g">next Q</button>
-        </footer>
-        
-    </div>
+    
+    <div hidden id="question_crd" class="QC">
+      <h2 id="question_txt"></h2>
+      <div id="quiz_choices">
+        <button id="choice0" class="button_choice">1.</button>
+        <button id="choice1" class="button_choice">2.</button>
+        <button id="choice2" class="button_choice">3.</button>
+        <button id="choice3" class="button_choice">4.</button>
+      </div>
+      <div id="results">
+        <hr>
+        <p id="results_txt"></p>
+      </div>
 
     </div>
-
-    <div class="resultbox">
-        <div class="completetext">you did it</div>
-        <div class="scoretext">
-            <span>sorry you got this many correct <p>2</p><p>of</p><p>45</p></span>
-        </div>
-        <div class="buttons">
-            <button class="restart"> do it again</button>
-            <button class="quit"> don with this</button>
-        </div>
+    <div hidden id="results_crd" class="page">
+      <h1>All Done!!</h1>
+      <p>This is you final score <span id="score"></span>!</p>
+      <form class="form" id="submition_form">
+        <label for="initials"> Enter initials</label>
+        <input type="text" id="initials">
+        <button id="submit_btn" class="button">Submit</button>
+      </form>
     </div>
-
-    <script src="js/script.js"></script>
-        
-
+    
+    <div hidden id="leaderboard" class="page">
+      <h2>Hightscores</h2>
+      <ol id="score-list"></ol>
+      <div class="inline_btn">
+        <button id="back_btn" class="button">Return</button>
+        <button id="clear_btn" class="button">Clear Hightscores</button>
+      </div>
+      
+    </div>
+    
+  </main>
+  
+  <script src="script.js"></script> 
+  
 </body>
+
 </html>
