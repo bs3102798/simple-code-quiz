@@ -3,7 +3,7 @@ const questions = [
     choices:[
         "1.strings", 
         "2.booleans", 
-        "3.alertts", 
+        "3. alertts", 
         "4. numbers"],
         answer:"3. alerts",},
         
@@ -13,12 +13,12 @@ const questions = [
             "2. other arrays",
             "3. booleans",
             "4. all of the above"],
-            answer: "4.all of the above"
+            answer: "4. all of the above"
         },
         
         {questionTxt:"String valuse must be enclosed within _____when being assigned to variables", 
         choices:[
-        "1. commas",
+        "1.commas",
         "2.curl brackets", 
         "3.quotes", 
         "4.parentheses"],
